@@ -1,5 +1,5 @@
 <?php
-$token = 'TU TOKEN VA AQUI';
+$token = '5241166842:AAH6o9RYiUp6pyWONJ0f8ZnZLX02Ty0Vw5A';
 $website = 'https://api.telegram.org/bot'.$token;
 
 $input = file_get_contents('php://input');
@@ -14,7 +14,7 @@ switch($message) {
         sendMessage($chatId, $response);
         break;
     case '/info':
-        $response = 'Hola! Soy @trecno_bot';
+        $response = 'Hola! Soy el bot del @PAEBanes_bot';
         sendMessage($chatId, $response);
         break;
     default:
